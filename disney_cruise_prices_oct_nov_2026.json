@@ -1,0 +1,252 @@
+{
+  "overview": {
+    "period": "October/November 2026",
+    "room_type": "Verandah (Deluxe Oceanview with Verandah)",
+    "notes": "Prices are per stateroom and include taxes, fees, and port expenses. Prices for 2 guests unless otherwise noted."
+  },
+  "ships_and_itineraries": [
+    {
+      "ship": "Disney Dream",
+      "home_port": "Fort Lauderdale, FL",
+      "itineraries": [
+        {
+          "length": "3-night",
+          "destination": "Bahamas",
+          "ports": [
+            "Nassau",
+            "Castaway Cay"
+          ],
+          "verandah_price_range": "$2,800 - $4,500",
+          "notes": "Prices vary by specific sailing date"
+        },
+        {
+          "length": "4-night",
+          "destination": "Bahamas",
+          "ports": [
+            "Nassau",
+            "Castaway Cay"
+          ],
+          "verandah_price_range": "$3,500 - $5,500",
+          "example": "Oct 2026 - Interior from $3,907 for 4 guests, Verandah ~$5,000+"
+        },
+        {
+          "length": "5-night",
+          "destination": "Bahamas",
+          "ports": [
+            "Nassau",
+            "Castaway Cay",
+            "Lookout Cay"
+          ],
+          "verandah_price_range": "$4,200 - $6,500"
+        },
+        {
+          "length": "7-night",
+          "destination": "Eastern Caribbean",
+          "ports": [
+            "Tortola",
+            "St. Thomas",
+            "Castaway Cay"
+          ],
+          "verandah_price_range": "$5,500 - $8,500"
+        }
+      ]
+    },
+    {
+      "ship": "Disney Fantasy",
+      "home_port": "Port Canaveral, FL",
+      "itineraries": [
+        {
+          "length": "3-night",
+          "destination": "Bahamas",
+          "ports": [
+            "Nassau",
+            "Castaway Cay"
+          ],
+          "verandah_price_range": "$2,600 - $4,200"
+        },
+        {
+          "length": "4-night",
+          "destination": "Bahamas",
+          "ports": [
+            "Nassau",
+            "Castaway Cay",
+            "Lookout Cay"
+          ],
+          "verandah_price_range": "$3,400 - $5,200"
+        },
+        {
+          "length": "5-night",
+          "destination": "Bahamas",
+          "ports": [
+            "Nassau",
+            "Castaway Cay",
+            "Lookout Cay"
+          ],
+          "verandah_price_range": "$4,000 - $6,200"
+        }
+      ]
+    },
+    {
+      "ship": "Disney Treasure",
+      "home_port": "Port Canaveral, FL",
+      "itineraries": [
+        {
+          "length": "7-night",
+          "destination": "Eastern Caribbean",
+          "ports": [
+            "Tortola",
+            "St. Thomas",
+            "Castaway Cay"
+          ],
+          "verandah_price_range": "$6,340 - $9,000",
+          "example": "August 2026 reference: Inside $5,100, Verandah $6,340 for 2 guests"
+        },
+        {
+          "length": "7-night",
+          "destination": "Western Caribbean",
+          "ports": [
+            "Cozumel",
+            "Grand Cayman",
+            "Castaway Cay"
+          ],
+          "verandah_price_range": "$6,500 - $9,500"
+        }
+      ]
+    },
+    {
+      "ship": "Disney Magic",
+      "home_port": "San Diego (Oct) / Galveston (Nov)",
+      "itineraries": [
+        {
+          "length": "3-5 nights",
+          "destination": "Baja California (October)",
+          "ports": [
+            "Cabo San Lucas",
+            "Ensenada"
+          ],
+          "verandah_price_range": "$2,400 - $5,000"
+        },
+        {
+          "length": "4-5 nights",
+          "destination": "Western Caribbean (November)",
+          "ports": [
+            "Progreso",
+            "Cozumel"
+          ],
+          "verandah_price_range": "$3,200 - $5,500"
+        },
+        {
+          "length": "7-night",
+          "destination": "Bahamas (November)",
+          "ports": [
+            "Nassau",
+            "Castaway Cay"
+          ],
+          "verandah_price_range": "$5,000 - $7,500"
+        }
+      ]
+    },
+    {
+      "ship": "Disney Wonder",
+      "home_port": "San Diego, CA",
+      "itineraries": [
+        {
+          "length": "3-4 nights",
+          "destination": "Baja California",
+          "ports": [
+            "Ensenada",
+            "Catalina Island"
+          ],
+          "verandah_price_range": "$2,200 - $4,000"
+        },
+        {
+          "length": "5-7 nights",
+          "destination": "Mexican Riviera",
+          "ports": [
+            "Cabo San Lucas",
+            "Puerto Vallarta",
+            "Mazatlan"
+          ],
+          "verandah_price_range": "$4,500 - $7,500"
+        }
+      ]
+    },
+    {
+      "ship": "Disney Destiny",
+      "home_port": "Fort Lauderdale, FL",
+      "itineraries": [
+        {
+          "length": "4-night",
+          "destination": "Bahamas",
+          "ports": [
+            "Nassau",
+            "Castaway Cay"
+          ],
+          "verandah_price_range": "$3,800 - $5,800"
+        },
+        {
+          "length": "5-night",
+          "destination": "Eastern Caribbean",
+          "ports": [
+            "Nassau",
+            "Castaway Cay",
+            "Lookout Cay"
+          ],
+          "verandah_price_range": "$4,500 - $6,800"
+        },
+        {
+          "length": "7-night",
+          "destination": "Western Caribbean",
+          "ports": [
+            "Cozumel",
+            "Grand Cayman",
+            "Jamaica"
+          ],
+          "verandah_price_range": "$6,000 - $9,000"
+        }
+      ]
+    }
+  ],
+  "specific_examples": [
+    {
+      "date": "September 27 - October 2, 2026",
+      "guests": "2 Adults + 1 Child (11)",
+      "verandah_price": "$3,732"
+    },
+    {
+      "date": "October 24 - October 29, 2026",
+      "guests": "2 Adults + 1 Child (11)",
+      "verandah_price": "$4,843.84"
+    }
+  ],
+  "discount_options": {
+    "VGT_category": {
+      "name": "Verandah Guaranteed with Restrictions",
+      "savings": "Up to 35% off standard rates",
+      "restrictions": [
+        "Disney picks your specific room",
+        "Non-refundable",
+        "Full payment required at booking"
+      ]
+    },
+    "florida_resident": {
+      "savings": "Up to 35% off select sailings",
+      "eligibility": "Florida residents only"
+    }
+  },
+  "verandah_room_details": {
+    "size": "~268 sq ft including verandah",
+    "beds": "Queen-size bed or 2 twin beds",
+    "sofa": "Single convertible sofa",
+    "bathroom": "Split bath",
+    "max_occupancy": "Up to 4 guests depending on stateroom category"
+  },
+  "price_factors": [
+    "Specific sailing date (weekends and holidays cost more)",
+    "Ship (newer ships like Wish and Treasure cost more)",
+    "Itinerary length",
+    "Verandah category (standard vs. deluxe vs. navigator's)",
+    "Deck location",
+    "Time until sailing (prices often increase as sailing approaches)"
+  ]
+}
