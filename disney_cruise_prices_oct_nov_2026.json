@@ -207,6 +207,85 @@
       ]
     }
   ],
+  "october_2026_7night_options": [
+    {
+      "ship": "Disney Dream",
+      "dates": "October 2-9, 2026",
+      "length": "7-night",
+      "type": "Double Dip (Both Disney Islands)",
+      "departure_port": "Fort Lauderdale, FL",
+      "ports": ["Castaway Cay", "Lookout Cay at Lighthouse Point"],
+      "theme": "Halloween on the High Seas",
+      "verandah_estimate_per_room_4_guests": "$7,500 - $9,000",
+      "status": "User's target sailing"
+    },
+    {
+      "ship": "Disney Dream",
+      "dates": "October 10, 2026",
+      "length": "7-night",
+      "type": "Western Caribbean",
+      "departure_port": "Fort Lauderdale, FL",
+      "ports": ["Cozumel", "Grand Cayman", "Castaway Cay"],
+      "theme": "Halloween on the High Seas",
+      "verandah_estimate_per_room_4_guests": "$7,000 - $8,500",
+      "notes": "Single island stop only"
+    },
+    {
+      "ship": "Disney Dream",
+      "dates": "October 17, 2026",
+      "length": "7-night",
+      "type": "Eastern Caribbean",
+      "departure_port": "Fort Lauderdale, FL",
+      "ports": ["Lookout Cay", "San Juan", "Puerto Plata", "Castaway Cay"],
+      "theme": "Halloween on the High Seas",
+      "verandah_estimate_per_room_4_guests": "$7,500 - $9,000",
+      "starting_price_inside_2_guests": "$3,828",
+      "notes": "Double Dip - visits both islands"
+    }
+  ],
+  "target_sailing": {
+    "ship": "Disney Dream",
+    "dates": "October 2-9, 2026",
+    "length": "7-night",
+    "type": "Double Dip (Both Disney Islands)",
+    "departure_port": "Fort Lauderdale, FL",
+    "ports": ["Castaway Cay", "Lookout Cay at Lighthouse Point"],
+    "theme": "Halloween on the High Seas"
+  },
+  "family_configuration": {
+    "total_guests": 8,
+    "adults": 4,
+    "children": [
+      {"age": 1, "notes": "Infant - requires crib"},
+      {"age": 4},
+      {"age": 7},
+      {"age": 9}
+    ],
+    "rooms_needed": 2,
+    "room_assignments": [
+      {
+        "room": 1,
+        "guests": "2 Adults + 2 Children (ages 7, 9)",
+        "room_type": "Deluxe Oceanview with Verandah",
+        "max_occupancy": 4
+      },
+      {
+        "room": 2,
+        "guests": "2 Adults (Grandparents) + 2 Children (ages 1, 4)",
+        "room_type": "Deluxe Oceanview with Verandah",
+        "max_occupancy": 4,
+        "notes": "Request crib for infant at booking"
+      }
+    ]
+  },
+  "price_estimate": {
+    "per_room_verandah_base_2_guests": "$5,900 - $6,500",
+    "per_room_with_4_guests": "$7,500 - $9,000",
+    "two_rooms_total_estimate": "$15,000 - $18,000",
+    "gratuities_estimate": "$812 (8 guests x 7 nights x $14.50/day)",
+    "grand_total_estimate": "$15,800 - $18,800",
+    "notes": "Prices are estimates based on Fall 2026 verandah averages. Actual prices may vary. Infant (under 3) may have reduced fare."
+  },
   "specific_examples": [
     {
       "date": "September 27 - October 2, 2026",
