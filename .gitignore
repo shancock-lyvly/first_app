@@ -13,3 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Whoop credentials and data
+.env
+whoop_data.json
