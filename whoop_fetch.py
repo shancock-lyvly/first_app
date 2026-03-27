@@ -18,11 +18,13 @@ API_BASE = "https://api.prod.whoop.com/developer/v1"
 
 
 def print_auth_url():
+    import secrets
     params = urllib.parse.urlencode({
         "client_id": CLIENT_ID,
         "redirect_uri": REDIRECT_URI,
         "response_type": "code",
         "scope": SCOPES,
+        "state": secrets.token_hex(8),
     })
     url = f"{AUTH_URL}?{params}"
     print(f"\n1. Visit this URL in your browser:\n\n  {url}\n")
