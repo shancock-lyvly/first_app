@@ -7,9 +7,6 @@ import json
 import os
 import urllib.parse
 import urllib.request
-import webbrowser
-from http.server import BaseHTTPRequestHandler, HTTPServer
-from threading import Thread
 
 CLIENT_ID = os.environ["WHOOP_CLIENT_ID"]
 CLIENT_SECRET = os.environ["WHOOP_CLIENT_SECRET"]
@@ -19,30 +16,8 @@ AUTH_URL = "https://api.prod.whoop.com/oauth/oauth2/auth"
 TOKEN_URL = "https://api.prod.whoop.com/oauth/oauth2/token"
 API_BASE = "https://api.prod.whoop.com/developer/v1"
 
-auth_code = None
 
-
-class CallbackHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        global auth_code
-        parsed = urllib.parse.urlparse(self.path)
-        params = urllib.parse.parse_qs(parsed.query)
-        if "code" in params:
-            auth_code = params["code"][0]
-            self.send_response(200)
-            self.send_header("Content-Type", "text/html")
-            self.end_headers()
-            self.wfile.write(b"<h2>Authorized! You can close this tab.</h2>")
-        else:
-            self.send_response(400)
-            self.end_headers()
-            self.wfile.write(b"Missing code parameter.")
-
-    def log_message(self, format, *args):
-        pass  # suppress request logs
-
-
-def get_auth_code():
+def print_auth_url():
     params = urllib.parse.urlencode({
         "client_id": CLIENT_ID,
         "redirect_uri": REDIRECT_URI,
@@ -50,19 +25,19 @@ def get_auth_code():
         "scope": SCOPES,
     })
     url = f"{AUTH_URL}?{params}"
-    print(f"\nOpening browser for Whoop authorization...")
-    print(f"If it doesn't open automatically, visit:\n  {url}\n")
-    webbrowser.open(url)
+    print(f"\n1. Visit this URL in your browser:\n\n  {url}\n")
+    print("2. Log in and authorize the app.")
+    print("3. You'll be redirected to localhost:8000 (it will fail to load — that's OK).")
+    print("4. Copy the FULL URL from your browser's address bar.")
+    print(f"\n5. Then run:  python3 whoop_fetch.py <paste-full-url-here>\n")
 
-    server = HTTPServer(("localhost", 8000), CallbackHandler)
-    thread = Thread(target=server.handle_request)
-    thread.start()
-    thread.join(timeout=120)
-    server.server_close()
 
-    if not auth_code:
-        raise RuntimeError("No authorization code received within 2 minutes.")
-    return auth_code
+def extract_code_from_redirect(redirect_url):
+    parsed = urllib.parse.urlparse(redirect_url)
+    params = urllib.parse.parse_qs(parsed.query)
+    if "code" not in params:
+        raise RuntimeError("No 'code' found in the URL.")
+    return params["code"][0]
 
 
 def get_token(code):
@@ -105,7 +80,12 @@ def fetch_all(token, path):
 
 
 def main():
-    code = get_auth_code()
+    import sys
+    if len(sys.argv) < 2:
+        print_auth_url()
+        return
+
+    code = extract_code_from_redirect(sys.argv[1])
     print("Got authorization code, exchanging for token...")
     token_data = get_token(code)
     token = token_data["access_token"]
