@@ -91,7 +91,7 @@ def main():
     print("Got authorization code, exchanging for token...")
     token_data = get_token(code)
     token = token_data["access_token"]
-    print("Authenticated.\n")
+    print(f"Authenticated.\nAccess token: {token}\n")
 
     print("Fetching profile...")
     profile = api_get(token, "/user/profile/basic")
